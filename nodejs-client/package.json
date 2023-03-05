@@ -1,0 +1,12 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "start": "node client.js"
+  },
+  "author": "Rick Cotter",
+  "private": true,
+  "license": "ISC"
+}
