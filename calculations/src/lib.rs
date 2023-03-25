@@ -1,23 +1,30 @@
-// #[cfg(test)]
-// mod tests {
-//     #[test]
-//     fn it_works() {
-//         let result = 2 + 2;
-//         assert_eq!(result, 4);
-//     }
+use jni::sys::*;
+use jni::objects::JClass;
+use jni::JNIEnv;
+
+// // Include the JNI header file
+// #[allow(non_upper_case_globals, non_camel_case_types, non_snake_case)]
+// mod calculationsjni {
+//     include!("../include/CalculationsJNI.h");
 // }
 
-// Calculate the distance between two points in the Earth.
-// For example, from Paris (48.85341_f64, -2.34880_f64) to London (51.50853_f64, -0.12574_f64)
-// // https://rust-lang-nursery.github.io/rust-cookbook/science/mathematics/trigonometry.html#distance-between-two-points-on-the-earth
-
-// pub extern fn distance_between_two_points_on_the_earth(from_lat: f64, from_long: f64, to_lat: f64, to_long: f64) -> f64 {
+// Implement the JNI function
 #[no_mangle]
-pub extern fn distance_between_two_points_on_the_earth() {
-    println!("From inside calculation library");
+pub extern "system" fn Java_CalculationsJNI_add(
+    _env: JNIEnv,
+    _class: JClass,
+    a: jint,
+    b: jint,
+) -> jint {
+    a + b // Duplicated below
 }
 
 #[no_mangle]
 pub extern fn add(a: i32, b: i32) -> i32 {
     a + b
+}
+
+#[no_mangle]
+pub extern fn distance_between_two_points_on_the_earth() {
+    println!("From inside calculation library");
 }

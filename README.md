@@ -3,7 +3,7 @@
 | Flutter | TODO |
 | Delphi | TODO |
 | .Net | FFI via P/Invoke / DllImport |
-| Java | TODO |
+| Java | JNI |
 | Javascript Web | TODO |
 | Node.js | WASM |
 | Python | FFI |

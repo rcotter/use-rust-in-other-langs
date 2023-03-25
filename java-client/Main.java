@@ -1,13 +1,9 @@
 class Main {    
-    static {
-        System.loadLibrary("calculations"); 
-    }
-
-    private static native int add(int a, int b);
-
     public static void main(String[] args) {
-        System.out.println("Java main()");
-        int result = add(2, 3);
-        System.out.println("Result of add(2, 3): " + result);
+        System.out.println("Running Java main()");
+
+        CalculationsJNI calculations = new CalculationsJNI();
+        int result = calculations.add(5, 7);
+        System.out.println("5 + 7 = " + result);
     }
 }
