@@ -1,18 +1,12 @@
-| CLIENT | INTERFACE |
+| CLIENT | INTERFACE | Unit Tests |
 |---|---|
-| Flutter | TODO |
-| Delphi | TODO |
-| .Net | FFI via P/Invoke / DllImport |
-| Java | JNI |
-| Javascript Web | TODO |
-| Node.js | WASM |
-| Python | FFI |
-| Ruby | FFI |
-| Rust | Direct Dependency |
-
-
-# TODO
-* More complex returns:  structs, etc.
-* Ditto function args
-* Perf
-* Unit tests
+| .Net | FFI via P/Invoke / DllImport | TODO |
+| Delphi | TODO | TODO |
+| Flutter | TODO | TODO |
+| Java | JNI | TODO |
+| Javascript Web | TODO | TODO |
+| Node.js | WASM | YES |
+| Python | FFI | TODO |
+| Ruby | FFI | TODO |
+| Rust | Direct Dependency | TODO |
+| Swift | TODO | TODO |
