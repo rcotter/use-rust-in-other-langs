@@ -4,9 +4,13 @@
   "description": "",
   "main": "client.js",
   "scripts": {
-    "start": "node client.js"
+    "start": "node client.js",
+    "test": "npx jest"
   },
   "author": "Rick Cotter",
   "private": true,
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
 }

@@ -1,1 +1,6 @@
 target
+calculations.js
+calculations.d.ts
+calculations_bg.wasm
+calculations_bg.wasm.d.ts
+calculations_bg.js

@@ -1,3 +1,6 @@
 WASM IS WORKING (No FFI).
 
-Run `npm run start`
+Run `npm start`
+
+# Tests
+Run `npm test`
