@@ -1,6 +1,6 @@
 | CLIENT | INTERFACE |
 |---|---|
-| Dart | TODO |
+| Flutter | TODO |
 | Delphi | TODO |
 | .Net | FFI via P/Invoke / DllImport |
 | Java | TODO |

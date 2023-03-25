@@ -14,15 +14,10 @@
 // pub extern fn distance_between_two_points_on_the_earth(from_lat: f64, from_long: f64, to_lat: f64, to_long: f64) -> f64 {
 #[no_mangle]
 pub extern fn distance_between_two_points_on_the_earth() {
-    // let earth_radius_kilometer = 6371.0_f64;
-    // let central_angle_inner = ((from_lat - to_lat).to_radians() / 2.0).sin().powi(2)
-    //     + from_lat.to_radians().cos() * to_lat.to_radians().cos() * ((from_long - to_long).to_radians() / 2.0).sin().powi(2);
-    // let central_angle = 2.0 * central_angle_inner.sqrt().asin();
-    // return earth_radius_kilometer * central_angle;
     println!("From inside calculation library");
 }
 
 #[no_mangle]
-pub fn add(a: i32, b: i32) -> i32 {
+pub extern fn add(a: i32, b: i32) -> i32 {
     a + b
 }
