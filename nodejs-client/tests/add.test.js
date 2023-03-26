@@ -12,7 +12,8 @@ describe('tests', () => {
         const lines = loadTestFile('add_inputs.txt');
 
         for (let i = 0; i < lines.length; i++) {
-            const [a, b, expectedSum] = lines[i].split(',').map(s => parseFloat(s))
+            let [a, b, expectedSum, nodeJsExpectedSum] = lines[i].split(',').map(s => parseFloat(s))
+            expectedSum = nodeJsExpectedSum == undefined ? expectedSum : nodeJsExpectedSum;    
             expect(add(a, b)).toEqual(expectedSum);
         }
     });

@@ -1,7 +1,6 @@
 # C Libraries
 1. Build `cargo build --release` from within this directory.
 1. Outputs dynamic linking target **./target/release/libcalculations.dylib**
-1. Output header for native use as Java (and others may) require: TODO
 
 
 # WASM Library

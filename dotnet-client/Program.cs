@@ -1,10 +1,11 @@
 ﻿using System.Runtime.InteropServices;
 
 [DllImport("../calculations/target/release/libcalculations.dylib", CallingConvention = CallingConvention.Cdecl)]
-static extern int add(int a, int b);
+static extern double add(double a, double b);
 
 [DllImport("../calculations/target/release/libcalculations.dylib", CallingConvention = CallingConvention.Cdecl)]
 static extern void distance_between_two_points_on_the_earth();
 
 distance_between_two_points_on_the_earth();
 Console.WriteLine($"2 + 3 = {add(2, 3)}");
+Console.WriteLine($"2.2 + 3.3 = {add(2.2, 3.3)}");

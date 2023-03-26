@@ -10,10 +10,10 @@ extern "C" {
 /*
  * Class:     CalculationsJNI
  * Method:    add
- * Signature: (II)I
+ * Signature: (DD)D
  */
-JNIEXPORT jint JNICALL Java_CalculationsJNI_add
-  (JNIEnv *, jobject, jint, jint);
+JNIEXPORT jdouble JNICALL Java_CalculationsJNI_add
+  (JNIEnv *, jobject, jdouble, jdouble);
 
 #ifdef __cplusplus
 }

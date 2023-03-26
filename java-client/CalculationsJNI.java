@@ -8,5 +8,5 @@ public class CalculationsJNI {
         }
     }
 
-    public native int add(int a, int b);
+    public native double add(double a, double b);
 }
