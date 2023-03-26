@@ -9,10 +9,52 @@
     function add() {
         alert(`wasm.add(1.1, 2.2) = ${wasm.add(1.1, 2.2)}`);
     }
+
+    async function fetchInputs(fileName) {
+        var response = await fetch(`test-input/${fileName}.txt`);
+        var data = await response.text();
+        return data.trim().split('\n').slice(1); // Get lines but skip header
+    }
+
+    function addTestElement(parentElement, testDescription, passed) {
+        const testElement = document.createElement('div'); 
+        testElement.setAttribute('style', `color: ${passed ? 'green' : 'red'};`);
+        const textElement = document.createTextNode(testDescription);
+        testElement.appendChild(textElement);
+        parentElement.appendChild(testElement);
+    }
+
+    async function runAddTests() {
+        let lines = await fetchInputs('add_inputs');
+        lines = lines.map(l => l.split(',').map(v => parseFloat(v)))
+
+        const root = document.getElementById('addResults');
+        root.replaceChildren(); // Remove all children
+        
+        for (let i = 0; i < lines.length; i++) {
+            let [a, b, expectedSum, specialExpectedSum] = lines[i];
+            expectedSum = specialExpectedSum == undefined ? expectedSum : specialExpectedSum;
+
+            const actualSum = wasm.add(a, b);
+            
+            const passed = actualSum === expectedSum;  
+            const error = !passed ? ` => Expected ${expectedSum}` : '';
+            const description = `${i + 1}. ${a} + ${b} = ${actualSum}${error}`;
+            addTestElement(root, description, passed);
+        }
+    }
+
+    function run() {
+        runAddTests();
+    }
 </script>
 </head>
 <body>
 <h1>All calls use the WASM Calculations library that is implemented in Rust.</h1>
 <button onclick="add()">wasm.add(1.1, 2.2)</button>
+<h2>Tests</h2>
+<button onclick="run()">Run All</button>
+<h3>Add</h3>
+<div id="addResults"></div>
 </body>
 </html>
