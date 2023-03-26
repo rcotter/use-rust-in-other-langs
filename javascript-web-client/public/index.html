@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<title>WASM Test</title>
+<meta name="description" content="A WASM test">
+<meta name="keywords" content="html WASM">
+<script src="calculations-loader.js"></script>
+<script>
+    function add() {
+        alert(`wasm.add(1.1, 2.2) = ${wasm.add(1.1, 2.2)}`);
+    }
+</script>
+</head>
+<body>
+<h1>All calls use the WASM Calculations library that is implemented in Rust.</h1>
+<button onclick="add()">wasm.add(1.1, 2.2)</button>
+</body>
+</html>

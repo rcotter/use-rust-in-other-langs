@@ -4,7 +4,7 @@
 | Delphi | TODO | TODO |
 | Flutter | TODO | TODO |
 | Java | JNI | TODO |
-| Javascript Web | TODO | TODO |
+| Javascript Web | WASM | TODO |
 | Node.js | WASM | YES |
 | Python | FFI | TODO |
 | Ruby | FFI | TODO |

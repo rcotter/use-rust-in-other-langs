@@ -1,0 +1,1 @@
+cp ../calculations/calculations_bg.wasm public & npm start
