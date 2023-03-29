@@ -1,6 +1,6 @@
-Rust, the new hotness for fast but safe low level code. Linus is even putting it in the Linux kernel.
+This repo demonstrates a simple write once, use everywhere calculation library being used by multiple client technologies, including in the browser via WASM/WebAssembly. For good measure, unit tests would be created for each client reusing the same inputs.
 
-This repo demonstrates a simple calculation library being used by multiple client technologies. Calculations could be written once and used everywhere including in the browser. For good measure, unit tests could be created for each client reusing the same inputs.
+Why Rust? It is compatible with C, runs just or nearly as fast but is much safer. Linus is even putting it in the Linux kernel.
 
 | CLIENT | INTERFACE | Unit Tests |
 |---|---|---|
