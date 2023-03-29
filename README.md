@@ -1,7 +1,7 @@
 | CLIENT | INTERFACE | Unit Tests |
 |---|---|---|
 | .Net | FFI via P/Invoke / DllImport | TODO |
-| Delphi | TODO | TODO |
+| Delphi | FFI 64-bit on Windows (credit to **@jrmaciel-zx**) | TODO |
 | Flutter | TODO | TODO |
 | Java | JNI | TODO |
 | Javascript Web | WASM | YES |
