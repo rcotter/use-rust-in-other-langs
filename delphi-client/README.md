@@ -11,4 +11,5 @@ Thus, I asked **@jrmaciel-zx** to:
 The working example is included as a snapshot in time. To update it someone with Delphi on Windows will need to help.
 
 Here is a screenshot of two inputs and the result.
+
 <image src="./Delphi Output.png">
