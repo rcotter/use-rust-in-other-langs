@@ -1,0 +1,1 @@
+{"rustc":16112765974880228268,"features":"","target":0,"profile":0,"path":0,"deps":[[10942196102677105,"build_script_build",false,18166020584692727786]],"local":[{"RerunIfChanged":{"output":"x86_64-apple-ios/release/build/wasm-bindgen-19c270283f27c2f9/output","paths":["build.rs"]}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}
