@@ -5,7 +5,7 @@ Why Rust? It is compatible with C, runs just or nearly as fast but is much safer
 NOTE: All were created and tests on MacOS unless otherwise noted.
 
 | CLIENT         | INTERFACE                                          | Unit Tests |
-|----------------|----------------------------------------------------|---|
+|----------------|----------------------------------------------------|:---:|
 | .Net           | FFI via P/Invoke / DllImport                       |  |
 | Delphi         | FFI 64-bit on Windows (credit to **@jrmaciel-zx**) |  |
 | Dart / Flutter | FFI via FFIGEN & FFI                             |  |
