@@ -6,13 +6,13 @@ NOTE: All were created and tests on MacOS unless otherwise noted.
 
 | CLIENT         | INTERFACE                                          | Unit Tests |
 |----------------|----------------------------------------------------|---|
-| .Net           | FFI via P/Invoke / DllImport                       | - |
-| Delphi         | FFI 64-bit on Windows (credit to **@jrmaciel-zx**) | - |
-| Dart / Flutter | FFI                                                | - |
-| Java           | JNI                                                | - |
-| Javascript Web | WASM                                               | YES |
-| Node.js        | WASM                                               | YES |
-| Python         | FFI                                                | - |
-| Ruby           | FFI                                                | - |
-| Rust           | Direct Dependency                                  | - |
-| Swift          | Won't Do - Lots of Examples Available              | - |
+| .Net           | FFI via P/Invoke / DllImport                       |  |
+| Delphi         | FFI 64-bit on Windows (credit to **@jrmaciel-zx**) |  |
+| Dart / Flutter | FFI via FFIGEN & FFI                             |  |
+| Java           | JNI                                                |  |
+| Javascript Web | WASM                                               | ✅ |
+| Node.js        | WASM                                               | ✅ |
+| Python         | FFI                                                |  |
+| Ruby           | FFI                                                |  |
+| Rust           | Direct Dependency                                  |  |
+| Swift          | Won't Do - Lots of Examples Available              |  |
