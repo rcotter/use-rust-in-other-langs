@@ -8,10 +8,10 @@ NOTE: All were created and tests on MacOS unless otherwise noted.
 |----------------|----------------------------------------------------|:---:|
 | .Net           | FFI via P/Invoke / DllImport                       |  |
 | Delphi         | FFI 64-bit on Windows (credit to **@jrmaciel-zx**) |  |
-| Dart / Flutter | FFI via FFIGEN & FFI                             |  |
+| Dart / Flutter | FFI via FFIGEN & FFI.                              |  |
 | Java           | JNI                                                |  |
-| Javascript Web | WASM                                               | ✅ |
-| Node.js        | WASM                                               | ✅ |
+| Javascript Web | WASM / WebAssembly                                 | ✅ |
+| Node.js        | WASM / WebAssembly                                 | ✅ |
 | Python         | FFI                                                |  |
 | Ruby           | FFI                                                |  |
 | Rust           | Direct Dependency                                  |  |
