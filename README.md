@@ -2,15 +2,17 @@ This repo demonstrates a simple write once, use everywhere calculation library b
 
 Why Rust? It is compatible with C, runs just or nearly as fast but is much safer. Linus is even putting it in the Linux kernel.
 
-| CLIENT | INTERFACE | Unit Tests |
-|---|---|---|
-| .Net | FFI via P/Invoke / DllImport | TODO |
-| Delphi | FFI 64-bit on Windows (credit to **@jrmaciel-zx**) | TODO |
-| Flutter | TODO | TODO |
-| Java | JNI | TODO |
-| Javascript Web | WASM | YES |
-| Node.js | WASM | YES |
-| Python | FFI | TODO |
-| Ruby | FFI | TODO |
-| Rust | Direct Dependency | TODO |
-| Swift | TODO | TODO |
+NOTE: All were created and tests on MacOS unless otherwise noted.
+
+| CLIENT         | INTERFACE                                          | Unit Tests |
+|----------------|----------------------------------------------------|---|
+| .Net           | FFI via P/Invoke / DllImport                       | TODO |
+| Delphi         | FFI 64-bit on Windows (credit to **@jrmaciel-zx**) | TODO |
+| Dart / Flutter | FFI                                                | TODO |
+| Java           | JNI                                                | TODO |
+| Javascript Web | WASM                                               | YES |
+| Node.js        | WASM                                               | YES |
+| Python         | FFI                                                | TODO |
+| Ruby           | FFI                                                | TODO |
+| Rust           | Direct Dependency                                  | TODO |
+| Swift          | TODO                                               | TODO |
