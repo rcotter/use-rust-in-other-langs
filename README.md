@@ -16,3 +16,7 @@ NOTE: All were created and tests on MacOS unless otherwise noted.
 | Ruby           | FFI                                                |  |
 | Rust           | Direct Dependency                                  |  |
 | Swift          | Won't Do - Lots of Examples Available              |  |
+
+
+#### ALTERNATIVE USAGE TO EXPLORE
+Just use WASM everywhere! Many languages are including and optimizing this ability.
